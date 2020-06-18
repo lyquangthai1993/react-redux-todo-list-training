@@ -1,5 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
-
+:root {
+  --orange: #eb5234;
+  --white: #fff;
+}
+.app-header {
+  background-color: var(--orange);
+  * {
+    color: white !important;
+  }
+}
 .todo-app {
   font-family: sans-serif;
 }

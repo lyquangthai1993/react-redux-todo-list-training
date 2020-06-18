@@ -9,7 +9,7 @@ function TodoApp() {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <div className="todo-app">
-      <header className="App-header">
+      <header className="app-header">
         <Navbar light expand="md">
           <NavbarBrand href="/">React redux</NavbarBrand>
           <NavbarToggler onClick={toggle} />

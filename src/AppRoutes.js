@@ -2,8 +2,15 @@ import React from "react";
 import { Route } from "react-router";
 import AddTodo from "./components/AddTodo";
 import TodoList from "./components/TodoList";
+import Home from "./components/Home";
 
 export const routeLinks = {
+  home: {
+    hideInNav: true,
+    path: "/",
+    name: "Todo app",
+    component: Home,
+  },
   todoList: {
     path: "/todo-list",
     name: "Todo list",
@@ -14,11 +21,7 @@ export const routeLinks = {
     name: "Add todo",
     component: AddTodo,
   },
-  // filterTodo: {
-  //   path: "/filter-todo",
-  //   name: "Filter todo",
-  //   component: VisibilityFilters,
-  // },
+  
 };
 export default () => {
   return (
